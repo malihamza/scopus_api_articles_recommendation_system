@@ -149,7 +149,7 @@
       <updated>1578825620924</updated>
       <workItem from="1578825622220" duration="13087000" />
       <workItem from="1578902173173" duration="11100000" />
-      <workItem from="1578932754340" duration="952000" />
+      <workItem from="1578932754340" duration="2859000" />
     </task>
     <servers />
   </component>
@@ -169,5 +169,6 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/RecommendationSystem$main.coverage" NAME="main Coverage Results" MODIFIED="1578931168210" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Main" />
+    <SUITE FILE_PATH="coverage/scopus_api_articles_recommendation_system$main.coverage" NAME="main Coverage Results" MODIFIED="1578934905846" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Main" />
   </component>
 </project>

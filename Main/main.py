@@ -18,14 +18,10 @@ from Main.MetaData import MetaData
 def main():
 
 
-    db = DataBase()
-    db.connect_to_database()
-    db.insert_data_by_column_name("affilname","ali")
-    # api = ScopusAPI()
-    # api.config_api()
-    # data = RecommendedData()
-    # results = api.get_search_data_frame('machine learning')
-    # data.preprocess_data_for_recommendation(results)
+
+
+     data = RecommendedData()
+     data.get_recommendation("machine learning")
     # print(data.get_column_share_in_decision("affiliation_country"))
 
     # for i in data1:

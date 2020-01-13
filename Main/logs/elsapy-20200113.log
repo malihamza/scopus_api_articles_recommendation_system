@@ -464,3 +464,73 @@
 2020-01-13 20:59:29,155 - elsapy.elsprofile - INFO - Module loaded.
 2020-01-13 20:59:29,155 - elsapy.elsdoc - INFO - Module loaded.
 2020-01-13 20:59:29,155 - elsapy.elssearch - INFO - Module loaded.
+2020-01-13 21:56:02,428 - elsapy.elsclient - INFO - Module loaded.
+2020-01-13 21:56:02,439 - elsapy.elsentity - INFO - Module loaded.
+2020-01-13 21:56:02,453 - elsapy.utils - INFO - Module loaded.
+2020-01-13 21:56:02,454 - elsapy.elsprofile - INFO - Module loaded.
+2020-01-13 21:56:02,456 - elsapy.elsdoc - INFO - Module loaded.
+2020-01-13 21:56:02,466 - elsapy.elssearch - INFO - Module loaded.
+2020-01-13 21:57:32,347 - elsapy.elsclient - INFO - Module loaded.
+2020-01-13 21:57:32,349 - elsapy.elsentity - INFO - Module loaded.
+2020-01-13 21:57:32,350 - elsapy.utils - INFO - Module loaded.
+2020-01-13 21:57:32,350 - elsapy.elsprofile - INFO - Module loaded.
+2020-01-13 21:57:32,351 - elsapy.elsdoc - INFO - Module loaded.
+2020-01-13 21:57:32,352 - elsapy.elssearch - INFO - Module loaded.
+2020-01-13 21:57:33,349 - elsapy.elsclient - INFO - Sending GET request to https://api.elsevier.com/content/search/scopus?query=machine+learning
+2020-01-13 21:57:36,282 - elsapy.utils - INFO - Converting prism:coverDate
+2020-01-13 21:58:20,885 - elsapy.elsclient - INFO - Module loaded.
+2020-01-13 21:58:20,887 - elsapy.elsentity - INFO - Module loaded.
+2020-01-13 21:58:20,887 - elsapy.utils - INFO - Module loaded.
+2020-01-13 21:58:20,888 - elsapy.elsprofile - INFO - Module loaded.
+2020-01-13 21:58:20,889 - elsapy.elsdoc - INFO - Module loaded.
+2020-01-13 21:58:20,890 - elsapy.elssearch - INFO - Module loaded.
+2020-01-13 21:58:21,886 - elsapy.elsclient - INFO - Sending GET request to https://api.elsevier.com/content/search/scopus?query=machine+learning
+2020-01-13 21:58:23,733 - elsapy.utils - INFO - Converting prism:coverDate
+2020-01-13 21:58:46,237 - elsapy.elsclient - INFO - Module loaded.
+2020-01-13 21:58:46,239 - elsapy.elsentity - INFO - Module loaded.
+2020-01-13 21:58:46,240 - elsapy.utils - INFO - Module loaded.
+2020-01-13 21:58:46,240 - elsapy.elsprofile - INFO - Module loaded.
+2020-01-13 21:58:46,241 - elsapy.elsdoc - INFO - Module loaded.
+2020-01-13 21:58:46,243 - elsapy.elssearch - INFO - Module loaded.
+2020-01-13 21:58:47,237 - elsapy.elsclient - INFO - Sending GET request to https://api.elsevier.com/content/search/scopus?query=machine+learning
+2020-01-13 21:58:49,384 - elsapy.utils - INFO - Converting prism:coverDate
+2020-01-13 21:59:16,053 - elsapy.elsclient - INFO - Module loaded.
+2020-01-13 21:59:16,054 - elsapy.elsentity - INFO - Module loaded.
+2020-01-13 21:59:16,055 - elsapy.utils - INFO - Module loaded.
+2020-01-13 21:59:16,055 - elsapy.elsprofile - INFO - Module loaded.
+2020-01-13 21:59:16,056 - elsapy.elsdoc - INFO - Module loaded.
+2020-01-13 21:59:16,058 - elsapy.elssearch - INFO - Module loaded.
+2020-01-13 21:59:17,055 - elsapy.elsclient - INFO - Sending GET request to https://api.elsevier.com/content/search/scopus?query=machine+learning
+2020-01-13 21:59:18,615 - elsapy.utils - INFO - Converting prism:coverDate
+2020-01-13 21:59:36,561 - elsapy.elsclient - INFO - Module loaded.
+2020-01-13 21:59:36,562 - elsapy.elsentity - INFO - Module loaded.
+2020-01-13 21:59:36,563 - elsapy.utils - INFO - Module loaded.
+2020-01-13 21:59:36,563 - elsapy.elsprofile - INFO - Module loaded.
+2020-01-13 21:59:36,564 - elsapy.elsdoc - INFO - Module loaded.
+2020-01-13 21:59:36,565 - elsapy.elssearch - INFO - Module loaded.
+2020-01-13 21:59:37,562 - elsapy.elsclient - INFO - Sending GET request to https://api.elsevier.com/content/search/scopus?query=machine+learning
+2020-01-13 21:59:39,407 - elsapy.utils - INFO - Converting prism:coverDate
+2020-01-13 21:59:51,121 - elsapy.elsclient - INFO - Module loaded.
+2020-01-13 21:59:51,123 - elsapy.elsentity - INFO - Module loaded.
+2020-01-13 21:59:51,124 - elsapy.utils - INFO - Module loaded.
+2020-01-13 21:59:51,125 - elsapy.elsprofile - INFO - Module loaded.
+2020-01-13 21:59:51,126 - elsapy.elsdoc - INFO - Module loaded.
+2020-01-13 21:59:51,126 - elsapy.elssearch - INFO - Module loaded.
+2020-01-13 21:59:52,124 - elsapy.elsclient - INFO - Sending GET request to https://api.elsevier.com/content/search/scopus?query=machine+learning
+2020-01-13 21:59:53,831 - elsapy.utils - INFO - Converting prism:coverDate
+2020-01-13 22:00:27,303 - elsapy.elsclient - INFO - Module loaded.
+2020-01-13 22:00:27,305 - elsapy.elsentity - INFO - Module loaded.
+2020-01-13 22:00:27,307 - elsapy.utils - INFO - Module loaded.
+2020-01-13 22:00:27,307 - elsapy.elsprofile - INFO - Module loaded.
+2020-01-13 22:00:27,309 - elsapy.elsdoc - INFO - Module loaded.
+2020-01-13 22:00:27,309 - elsapy.elssearch - INFO - Module loaded.
+2020-01-13 22:00:28,305 - elsapy.elsclient - INFO - Sending GET request to https://api.elsevier.com/content/search/scopus?query=machine+learning
+2020-01-13 22:00:30,588 - elsapy.utils - INFO - Converting prism:coverDate
+2020-01-13 22:01:46,828 - elsapy.elsclient - INFO - Module loaded.
+2020-01-13 22:01:46,830 - elsapy.elsentity - INFO - Module loaded.
+2020-01-13 22:01:46,831 - elsapy.utils - INFO - Module loaded.
+2020-01-13 22:01:46,831 - elsapy.elsprofile - INFO - Module loaded.
+2020-01-13 22:01:46,832 - elsapy.elsdoc - INFO - Module loaded.
+2020-01-13 22:01:46,833 - elsapy.elssearch - INFO - Module loaded.
+2020-01-13 22:01:47,829 - elsapy.elsclient - INFO - Sending GET request to https://api.elsevier.com/content/search/scopus?query=machine+learning
+2020-01-13 22:01:49,867 - elsapy.utils - INFO - Converting prism:coverDate

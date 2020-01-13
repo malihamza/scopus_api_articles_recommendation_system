@@ -1,6 +1,7 @@
 import pandas as pd
 import numpy as np
 from Main.DataBase import DataBase
+from Main.ScopusAPI import ScopusAPI
 
 class RecommendedData:
     def __init__(self):
@@ -8,6 +9,8 @@ class RecommendedData:
         self.__links_of_articles                    = 0
         self.__titles_of_articles                   = 0
         self.__db                                   = DataBase()
+        self.__api                                  = ScopusAPI()
+        self.__api.config_api()
 
     def get_preprocessed_data_for_recommendation(self):
         return self.__preprocessed_data_for_recommendation
@@ -76,7 +79,26 @@ class RecommendedData:
             self.__db.close_database()
             return preproccessed_data.sum(axis=1)
 
+    def get_recommendation(self,search_keywords):
+        result_from_api              = self.__api.get_search_data_frame(search_keywords)
+        self.preprocess_data_for_recommendation(result_from_api)
 
+        author_data                  = self.get_column_share_in_decision("author")
+        publisher_data               = self.get_column_share_in_decision("publisher")
+        affilname_data               = self.get_column_share_in_decision("affilname")
+        affiliation_city_data        = self.get_column_share_in_decision("affiliation_city")
+        affiliation_country_data     = self.get_column_share_in_decision("affiliation_country")
 
+        recommended_results          = author_data + publisher_data + affilname_data + affiliation_city_data + affiliation_country_data
+        recommeded_results           = pd.DataFrame(recommended_results, columns=['recommended_score'])
 
+        self.__titles_of_articles    = pd.DataFrame(self.__titles_of_articles.values, columns=['title'])
+        recommended_results          = pd.concat([self.__titles_of_articles, recommended_results], axis=1)
+
+        recommended_results          = pd.concat([self.__links_of_articles, recommended_results], axis=1)
+        recommended_results.columns  = ['Url', 'Title', 'Score']
+        recommended_results['Score'] = recommended_results['Score'] / recommended_results['Score'].sum()
+        recommended_results          = recommended_results.sort_values(by='Score', ascending=False)
+
+        return recommended_results
 
