@@ -1,6 +1,6 @@
 import pandas as pd
 import sqlite3 as sql
-from Main.MetaData import MetaData
+from Main.Model.MetaData import MetaData
 
 
 class DataBase:

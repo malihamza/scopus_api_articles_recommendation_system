@@ -11,8 +11,8 @@ from elsapy.elsprofile import ElsAuthor, ElsAffil
 from elsapy.elsdoc import FullDoc, AbsDoc
 from elsapy.elssearch import ElsSearch
 import json
-from Main.DataBase import DataBase
-from Main.MetaData import MetaData
+from Main.DAL.DataBase import DataBase
+
 
 
 def main():
@@ -22,6 +22,7 @@ def main():
 
      data = RecommendedData()
      data.get_recommendation("machine learning")
+     
     # print(data.get_column_share_in_decision("affiliation_country"))
 
     # for i in data1:

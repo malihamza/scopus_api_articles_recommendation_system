@@ -69,10 +69,13 @@
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
+    <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\alihamza\PycharmProjects\RecommendationSystem\Main" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\alihamza\PycharmProjects\scopus_api_articles_recommendation_system\Main\API" />
+      <recent name="C:\Users\alihamza\PycharmProjects\scopus_api_articles_recommendation_system\Main\DAL" />
+      <recent name="C:\Users\alihamza\PycharmProjects\scopus_api_articles_recommendation_system\Main\Model" />
       <recent name="C:\Users\alihamza\PycharmProjects\RecommendationSystem\Main" />
     </key>
   </component>
@@ -149,7 +152,8 @@
       <updated>1578825620924</updated>
       <workItem from="1578825622220" duration="13087000" />
       <workItem from="1578902173173" duration="11100000" />
-      <workItem from="1578932754340" duration="2859000" />
+      <workItem from="1578932754340" duration="3782000" />
+      <workItem from="1579017905316" duration="1184000" />
     </task>
     <servers />
   </component>
@@ -161,7 +165,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
