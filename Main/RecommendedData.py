@@ -1,5 +1,4 @@
 import pandas as pd
-import numpy as np
 from Main.DAL.DataBase import DataBase
 from Main.API.ScopusAPI import ScopusAPI
 
@@ -101,3 +100,27 @@ class RecommendedData:
 
         return recommended_results
 
+    def save_search_result_in_db(self):
+        self.__db.connect_to_database()
+        range_of_data = 0
+        data = self.__preprocessed_data_for_recommendation.values
+        for row_data in data:
+            if range_of_data >=2:
+                break
+
+            if row_data[0] is not None and row_data[0] == row_data[0]:
+                self.__db.insert_data_by_column_name("author", row_data[0])
+
+            if row_data[1] is not None and row_data[1] == row_data[1]:
+                self.__db.insert_data_by_column_name("publisher", row_data[1])
+
+            if row_data[2] is not None and row_data[2] == row_data[2]:
+                self.__db.insert_data_by_column_name("affilname", row_data[2])
+
+            if row_data[3] is not None and row_data[3] == row_data[3]:
+                self.__db.insert_data_by_column_name("affiliation_city", row_data[3])
+
+            if row_data[4] is not None and row_data[4] == row_data[4]:
+                self.__db.insert_data_by_column_name("affiliation_country", row_data[4])
+
+            range_of_data += 1
