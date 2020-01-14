@@ -82,7 +82,7 @@ class RecommendedData:
     # This functions input keywords and return recommended result
     def get_recommendation(self,search_keywords):
         result_from_api              = self.__api.get_search_data_frame(search_keywords)
-        self.preprocess_data_for_recommendation(result_from_api)
+        self.__preprocess_data_for_recommendation(result_from_api)
 
         author_data                  = self.get_column_share_in_decision("author")
         publisher_data               = self.get_column_share_in_decision("publisher")

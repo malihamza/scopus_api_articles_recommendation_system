@@ -1,5 +1,5 @@
-from RecommendedData import RecommendedData
-from AppStart import AppStart
+from Main.RecommendedData import RecommendedData
+from Main.AppStart import AppStart
 
 
 def main():
@@ -14,7 +14,7 @@ def main():
     recommended_system.get_recommendation("deep learning")
     # Following function save the search result in database
 
-    recommended_system.save_search_result_in_db()
+    #recommended_system.save_search_result_in_db()
 
 
 if __name__ == "__main__":
