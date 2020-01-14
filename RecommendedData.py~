@@ -34,7 +34,7 @@ class RecommendedData:
 
         return data_frame_of_affiliation
 
-    def preprocess_data_for_recommendation(self, data_from_api):
+    def __preprocess_data_for_recommendation(self, data_from_api):
 
         self.__preprocessed_data_for_recommendation = data_from_api[
             ['prism:url', 'dc:title', 'dc:creator', 'prism:publicationName', 'affiliation' ]]
@@ -62,22 +62,24 @@ class RecommendedData:
                                                                               'name_of_affiliation_city',
                                                                               'name_of_affiliation_country'])
 
-    def make_dummy_data_by_columns(self,column_name):
+    def __make_dummy_data_by_columns(self,column_name):
         return pd.get_dummies(self.__preprocessed_data_for_recommendation['name_of_'+column_name], columns=['name_of_'+column_name])
 
+    # preprocess data on indvidual column base
     def get_column_share_in_decision(self,column_name):
         self.__db.connect_to_database()
 
-        pre_processed_data = self.make_dummy_data_by_columns(column_name)
+        pre_processed_data = self.__make_dummy_data_by_columns(column_name)
         data_from_database = self.__db.get_dataframe_by_colums(column_name).values
 
         for row_data in data_from_database:
-           if row_data[1] in pre_processed_data:
-               pre_processed_data[row_data[1]] = pre_processed_data[row_data[1]]*row_data[0]
+            if row_data[1] in pre_processed_data:
+                pre_processed_data[row_data[1]] = pre_processed_data[row_data[1]]*row_data[0]
 
         self.__db.close_database()
         return pre_processed_data.sum(axis=1)
 
+    # This functions input keywords and return recommended result
     def get_recommendation(self,search_keywords):
         result_from_api              = self.__api.get_search_data_frame(search_keywords)
         self.preprocess_data_for_recommendation(result_from_api)
@@ -100,6 +102,7 @@ class RecommendedData:
 
         return recommended_results
 
+    # save search result in database
     def save_search_result_in_db(self):
         self.__db.connect_to_database()
         range_of_data = 0
